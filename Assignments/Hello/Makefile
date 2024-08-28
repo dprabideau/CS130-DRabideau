@@ -1,5 +1,16 @@
-hello.exe:	hello.cpp
-	g++ -g -o hello.exe hello.cpp
+# a simple Makefile with 3 rules
 
+# rule for compiling program
+# make or make compile triggers the following rule
+compile:
+	g++ hello.cpp
+
+# rule for running programming
+# make run triggers the rule
+run:
+	./a.out
+
+# rule for clean up
+# make clean triggers the rule
 clean:
-	-rm hello.exe
+	rm -f a.out
