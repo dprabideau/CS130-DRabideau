@@ -1,8 +1,8 @@
 /*
 Library Functions Lab
-Updated By: FIXME
+Updated By: Dayne
 CSCI 111
-Date: FIXME
+Date: 09-05-2024
 
 Program prompts user to enter a decimal number. It then finds various trig and mathematical values 
 of the number using library functions and prints the results using cstdio's printf function.
