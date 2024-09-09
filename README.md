@@ -24,3 +24,16 @@
 | Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Labs/Lab2/library |
 | Self Grade | 100/100 |
 | Notes | fixed all the fixmes; learned about string outputs and user inputs. |
+
+
+### Homework #1
+
+| Name | Value |
+| :--- | :--- |
+| Name | Hangman, Echoechoecho |
+| Description | First oficial homework, two programs, one submitted in kattis |
+| Due Date | Sept 9th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Assignments/stdio |
+| Self Grade | 100/100 |
+| Notes | I looked up how to delay output, makes the hangman ACSII look animated when ran, and I used a For loop for the echoechoecho program. (I learned For loops in javascript and python) |
