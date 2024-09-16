@@ -37,3 +37,16 @@
 | Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Assignments/stdio |
 | Self Grade | 100/100 |
 | Notes | I looked up how to delay output, makes the hangman ACSII look animated when ran, and I used a For loop for the echoechoecho program. (I learned For loops in javascript and python) |
+
+
+### Homework #2
+
+| Name | Value |
+| :--- | :--- |
+| Name | Math & StdIO |
+| Description | Two programs one; one calculates the area and perimeter of a triangle, the other is a kattis problem |
+| Due Date | Sept 16th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Assignments/Math |
+| Self Grade | 100/100 |
+| Notes | Did this awhile ago I dont remeber hoiw I found it, but I think it went smoothly |
