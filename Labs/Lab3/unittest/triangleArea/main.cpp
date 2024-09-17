@@ -1,9 +1,9 @@
 /*
 Kattis - Triangle Area problem
 Function and Unit Testing
-Updated By: FIXME
-CSCI 111
-Date: FIXME
+Updated By: Dayne Rabideau
+CSCI 130
+Date: 09-12-2024
 
 Read and solve Triangle Area problem: https://open.kattis.com/problems/triarea 
 
@@ -38,8 +38,9 @@ int main()
   // read height and base into corresponding variables
   cin >> height >> base;
 	// FIXME1: Call area function passing proper arguments
+  //#Fixed#
 	// store the returned result into answer variable
-	answer = 0;
+	answer = areaOfTriangle(height, base);
 	// print answer
 	printf("%.7f\n", answer);
 	return 0;
@@ -49,6 +50,8 @@ int main()
 float areaOfTriangle(const unsigned height, const unsigned base) {
   float area = 0;
   // FIXME2: Find the area of traingle using the formular given in algorithm step: 2.a
+  //#Fixed#
+  area = (base*height)/2;
   // store the area into area variable
 	return area;
 } 
@@ -63,7 +66,25 @@ void testArea() {
   expected = 25.0;
   assert(abs(answer-expected) < MAX_ERROR);
   // FIXME3: Write 2nd test case
+  //#Fixed#
+  height = 2;
+  base = 4;
+  answer = areaOfTriangle(height, base);
+  expected = 4.0;
+  assert(abs(answer-expected) < MAX_ERROR);
   // FIXME4: Write 3rd test case
+  //#Fixed#
+  height = 2000;
+  base = 2;
+  answer = areaOfTriangle(height, base);
+  expected = 2000.0;
+  assert(abs(answer-expected) < MAX_ERROR);
   // FIXME5: Write 4th test case
+  //#Fixed#
+  height = 12;
+  base = 4;
+  answer = areaOfTriangle(height, base);
+  expected = 24;
+  assert(abs(answer-expected) < MAX_ERROR);
   cerr << "All test cases passed!\n";
 }
