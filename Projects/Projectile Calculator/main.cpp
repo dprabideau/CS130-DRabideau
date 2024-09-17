@@ -9,7 +9,8 @@
 
 using namespace std;
 
-double alpha; //muzzle_velocity, target_distance;
+double alpha, muzzle_velocity, target_distance;
+bool unit_type_meters = true;
 
 int main(){
     do {
@@ -25,6 +26,7 @@ int main(){
         cin >> choice1;
         if (choice1 == "a"){
             cout << "a";
+            unit_type_meters = false;
             flag = true;
         }
         else if (choice1 == "b"){
@@ -36,5 +38,12 @@ int main(){
         }
     }
     while (flag==false);
+    cout << "Please enter your muzzle velocity / launch speed: ";
+    cin >> muzzle_velocity;
+    if (unit_type_meters==false){
+        muzzle_velocity = muzzle_velocity*0.3048;
+    }
+    else {}
+    
     
 }
