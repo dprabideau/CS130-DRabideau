@@ -49,4 +49,43 @@
 | Status | complete |
 | Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Assignments/Math |
 | Self Grade | 100/100 |
-| Notes | Did this awhile ago I dont remeber hoiw I found it, but I think it went smoothly |
+| Notes | Did this awhile ago I dont remeber how I found it, but I think it went smoothly |
+
+
+### Lab #3
+
+| Name | Value |
+| :--- | :--- |
+| Name | Unittesting |
+| Description | Two programs one; one calculates the distance between two points and the other is a kattis problem to find the area of a right anled triangle |
+| Due Date | Sept 19th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Labs/Lab3/unittest |
+| Self Grade | 100/100 |
+| Notes | Pretty easy, nothing to note |
+
+
+### Homework #3
+
+| Name | Value |
+| :--- | :--- |
+| Name | Functions & Testing |
+| Description | Two programs one; one uses alot of mathmatical functions using two user inputs the other is a kattis problem to find amount of scientists to bribe |
+| Due Date | Sept 23th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Assignments/HW3 |
+| Self Grade | 100/100 |
+| Notes | Had some issues with the function testing till I asked for help, the kattis problem confused me at first but then I found a solution |
+
+
+### Project #1
+
+| Name | Value |
+| :--- | :--- |
+| Name | Projectile Project |
+| Description | a program with user interaction that find projectile computations in either feet of meters |
+| Due Date | Sept 23th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Projects/Projectile%20Calculator |
+| Self Grade | 100/100 |
+| Notes | I thought I had done it incorrectly until I relized the trig functions use radians not degrees |
