@@ -89,3 +89,42 @@
 | Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Projects/Projectile%20Calculator |
 | Self Grade | 100/100 |
 | Notes | I thought I had done it incorrectly until I relized the trig functions use radians not degrees |
+
+
+### Homework #4
+
+| Name | Value |
+| :--- | :--- |
+| Name | Conditionals |
+| Description | programs that sort numbers by size |
+| Due Date | Oct 7th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Assignments/conditionals |
+| Self Grade | 100/100 |
+| Notes | I dont remember this homework much |
+
+
+### Lab #4
+
+| Name | Value |
+| :--- | :--- |
+| Name | Conditionals |
+| Description | I dont rember what this was |
+| Due Date | Oct 3rd 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Labs/Lab4/conditionals/menu |
+| Self Grade | 100/100 |
+| Notes | Nothing to note as I dont remember this |
+
+
+### Lab #5
+
+| Name | Value |
+| :--- | :--- |
+| Name | Loops |
+| Description | Triangles and Squares and Gopher Holes |
+| Due Date | Oct 310th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Labs/Lab5 |
+| Self Grade | 100/100 |
+| Notes | Finished during class not to difficult |
