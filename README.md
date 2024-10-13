@@ -128,3 +128,16 @@
 | Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Labs/Lab5 |
 | Self Grade | 100/100 |
 | Notes | Finished during class not to difficult |
+
+
+### Lab #5
+
+| Name | Value |
+| :--- | :--- |
+| Name | Loops |
+| Description | Guess the number game |
+| Due Date | Oct 16th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Assignments/loops/GuessNumber |
+| Self Grade | 100/100 |
+| Notes | Enjoyed this Homework, I should have started it sooner as it took quite a bit of time. |
