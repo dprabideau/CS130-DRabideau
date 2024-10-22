@@ -130,7 +130,7 @@
 | Notes | Finished during class not to difficult |
 
 
-### Lab #5
+### Homework #5
 
 | Name | Value |
 | :--- | :--- |
@@ -141,3 +141,16 @@
 | Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Assignments/loops/GuessNumber |
 | Self Grade | 100/100 |
 | Notes | Enjoyed this Homework, I should have started it sooner as it took quite a bit of time. |
+
+
+### Lab #6
+
+| Name | Value |
+| :--- | :--- |
+| Name | Array |
+| Description | numbers and modulo |
+| Due Date | Oct 25th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Labs/Lab6 |
+| Self Grade | 100/100 |
+| Notes | Dont remeber it very well I did it last week |
