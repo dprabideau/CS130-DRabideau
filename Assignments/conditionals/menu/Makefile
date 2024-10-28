@@ -12,3 +12,6 @@ clean:
 
 run:
 	./$(PROGRAM)
+
+unittest:
+	./$(PROGRAM) test

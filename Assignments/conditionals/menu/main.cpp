@@ -1,3 +1,10 @@
+/*
+Author: Dayne Rabideau
+Date: **Change when done
+Description: Greets user -> Prompts to enter 5 numbers, menu with different 
+    fucntions loops untiol user want to quit
+*/
+
 #include <iostream>
 #include <cassert>
 #include <string>
@@ -6,7 +13,7 @@ using namespace std;
 
 void test ();
 
-// Function to find the largest number using conditional statements
+//find the largest number using conditional statements
 template <typename T>
 T findLargest(T a, T b, T c, T d, T e) {
     T largest = a;
@@ -19,7 +26,7 @@ T findLargest(T a, T b, T c, T d, T e) {
     return largest;
 }
 
-// Function to find the smallest number using conditional statements
+//find the smallest number using conditional statements
 template <typename T>
 T findSmallest(T a, T b, T c, T d, T e) {
     T smallest = a;
@@ -32,17 +39,16 @@ T findSmallest(T a, T b, T c, T d, T e) {
     return smallest;
 }
 
-// Function to determine if the floor of the sum is even, odd, or zero
 template <typename T>
 string sumEvenOddZero(T a, T b, T c, T d, T e) {
     T sum = a + b + c + d + e;
     
-    // Check if the sum is zero
+    //check if the sum is zero
     if (sum == 0) {
         return "zero";
     }
 
-    // Use conditional statements to determine if the sum is even or odd
+    //determine if the sum is even or odd, statci cast coverts to integer so modulus can be used on sum
     if (static_cast<int>(sum) % 2 == 0) {
         return "even";
     } else {
@@ -50,7 +56,7 @@ string sumEvenOddZero(T a, T b, T c, T d, T e) {
     }
 }
 
-// Function to greet the user and get 5 numbers
+//greet the user and get 5 numbers
 void GetNumbers(double& a, double& b, double& c, double& d, double& e) {
     test();
     string name;
@@ -59,22 +65,22 @@ void GetNumbers(double& a, double& b, double& c, double& d, double& e) {
     cout << "Hello, " << name << "! Please enter 5 integers separated with spaces: ";
     cin >> a >> b >> c >> d >> e;
     // I dont know how to ignore after 5 inputs as character space isnt limited
-    //just means user has to enter specifically 5 numbers and no more otherwise effects the next menu
+    //just means user has to enter specifically 5 numbers and no more otherwise it effects(or is it affects?) the next menu
 }
 
-// Function to run tests
+//tests
 void test() {
-    // Test cases for findLargest
+    //findLargest
     assert(findLargest(3, 5, 2, 8, 1) == 8);
     assert(findLargest(-1, -5, -3, -2, -4) == -1);
     assert(findLargest(1.5, 2.5, 0.5, 3.5, 2.0) == 3.5);
 
-    // Test cases for findSmallest
+    //findSmallest
     assert(findSmallest(3, 5, 2, 8, 1) == 1);
     assert(findSmallest(-1, -5, -3, -2, -4) == -5);
     assert(findSmallest(1.5, 2.5, 0.5, 3.5, 2.0) == 0.5);
 
-    // Test cases for sumEvenOddZero
+    //sumEvenOddZero
     assert(sumEvenOddZero(1, 1, 1, 1, 1) == "odd");
     assert(sumEvenOddZero(2, 2, 2, 2, 2) == "even");
     assert(sumEvenOddZero(0, 0, 0, 0, 0) == "zero");

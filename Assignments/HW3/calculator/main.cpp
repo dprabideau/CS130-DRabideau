@@ -34,6 +34,9 @@ T1 poww(T1 a, T1 b);
 template <class T1>
 T1 sqrtt(T1 a);
 
+template <class T1>
+T1 greatest(T1 a, T1 b);
+
 void testFunc();
 
 
@@ -115,6 +118,16 @@ template <class T1>
 template <class T1>
     T1 sqrtt(T1 a){
         return sqrt(a);
+    }
+
+template <class T1>
+    T1 greatest(T1 a, T1 b){
+        if (a>b){
+            return a;
+        }
+        else {
+            return b;
+        }
     }
 
 void testFunc() {
