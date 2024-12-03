@@ -51,14 +51,14 @@ string encrypt(string plaintext) {
         ciphertext += grid[curve[i]];
     }
 
-    //return the ciphertext along with prefix for grid size and padding count
+    //return the ciphertext along with prefix (grid size and extra character count)
     size_t randomCharsCount = gridCount - plaintext.size();
     return to_string(gridSize) + "," + to_string(randomCharsCount) + "," + ciphertext;
 }
 
-// Function to decrypt the ciphertext back to plaintext
+//decrypt the ciphertext back to plaintext
 string decrypt(string ciphertext) {
-    // Parse the grid size and padding count from the ciphertext
+    //parse the grid size and padding count from the ciphertext
     size_t firstComma = ciphertext.find(',');
     if (firstComma == string::npos) {
         cout << "Error: Invalid ciphertext format" << endl;
@@ -75,13 +75,13 @@ string decrypt(string ciphertext) {
     size_t randomCharsCount = stoi(ciphertext.substr(firstComma + 1, secondComma - firstComma - 1));
     string reorderedText = ciphertext.substr(secondComma + 1);
 
-    // Validate ciphertext length
+    //validate ciphertext length
     if (reorderedText.size() != gridSize * gridSize) {
         cout << "Error: Ciphertext length does not match grid size" << endl;
         return "";
     }
 
-    // Reconstruct the zigzag pattern
+    //reconstruct the zigzag pattern
     vector<size_t> curve;
     bool direction = true;
     for (size_t row = 0; row < gridSize; row++) {
@@ -97,13 +97,13 @@ string decrypt(string ciphertext) {
         direction = !direction;
     }
 
-    // Reorder the text based on the zigzag pattern
+    //reorder the text based on the zigzag pattern
     vector<char> grid(gridSize * gridSize, ' ');
     for (size_t i = 0; i < curve.size(); i++) {
         grid[curve[i]] = reorderedText[i];
     }
 
-    // Extract the original plaintext, excluding padding
+    //output the original plaintext, excluding prefix
     string plaintext = "";
     for (size_t i = 0; i < grid.size() - randomCharsCount; i++) {
         plaintext += grid[i];
