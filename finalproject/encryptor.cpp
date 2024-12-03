@@ -1,37 +1,37 @@
 #include "encryptor.h"
 
-// Function to generate random alphabetic characters
+//generate random alphabet characters
 char randomAlphabet() {
-    int randomChar = rand() % 52; // Generate a random number between 0-51
+    int randomChar = rand() % 52; //generate a random number between 0-51
     if (randomChar < 26) {
-        return 'a' + randomChar; // Return a lowercase letter
+        return 'a' + randomChar; //return lowercase letter
     } else {
-        return 'A' + (randomChar - 26); // Return an uppercase letter
+        return 'A' + (randomChar - 26); //return uppercase letter
     }
 }
 
-// Function to encrypt the given plaintext using the zigzag pattern
+//encrypt the given plaintext using the zigzag pattern
 string encrypt(string plaintext) {
-    srand(time(0)); // Seed the random number generator with the current time
+    srand(time(0)); //random number generator with the current time
 
-    // Calculate the minimum grid size to fit the plaintext
+    //calculate minimum grid size to fit the plaintext    ***note: larger plaintext --> less security
     size_t gridSize = ceil(sqrt(plaintext.length()));
-    size_t gridCount = gridSize * gridSize; // Total slots in the grid
+    size_t gridCount = gridSize * gridSize; //total slots in the grid
 
-    // Fill the grid with plaintext characters
+    //fill the grid with plaintext characters
     vector<char> grid;
     for (size_t i = 0; i < plaintext.size(); i++) {
         grid.push_back(plaintext[i]);
     }
 
-    // Fill the remaining slots with random characters
+    //fill the remaining slots with random characters
     while (grid.size() < gridCount) {
         grid.push_back(randomAlphabet());
     }
 
-    // Generate the zigzag pattern for traversal
+    //generate the zigzag pattern for traversal
     vector<size_t> curve;
-    bool direction = true; // True for left-to-right, false for right-to-left
+    bool direction = true; //true for left-to-right, false for right-to-left
     for (size_t row = 0; row < gridSize; row++) {
         if (direction) {
             for (size_t col = 0; col < gridSize; col++) {
@@ -42,16 +42,16 @@ string encrypt(string plaintext) {
                 curve.push_back(row * gridSize + col);
             }
         }
-        direction = !direction; // Flip direction for the next row
+        direction = !direction; //flip direction for the next row
     }
 
-    // Construct the ciphertext by reading the grid in zigzag order
+    //make the ciphertext by reading the grid in zigzag order
     string ciphertext = "";
     for (size_t i = 0; i < curve.size(); i++) {
         ciphertext += grid[curve[i]];
     }
 
-    // Return the ciphertext along with metadata for grid size and padding count
+    //return the ciphertext along with prefix for grid size and padding count
     size_t randomCharsCount = gridCount - plaintext.size();
     return to_string(gridSize) + "," + to_string(randomCharsCount) + "," + ciphertext;
 }

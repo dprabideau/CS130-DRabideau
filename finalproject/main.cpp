@@ -16,13 +16,13 @@ Description:
 int main() {
     int choice;
     while (true) {
-        // Present user with menu options
+        //menu options
         cout << "Choose an option:\n1. Encrypt\n2. Decrypt\n0. Exit\nYour choice: ";
         cin >> choice;
-        cin.ignore(); // Ignore leftover newline from input
+        cin.ignore(); //Ignore newline from input
 
         if (choice == 1) {
-            // Encryption mode
+            //encryption mode
             string plaintext;
             cout << "Enter the plaintext to encrypt: ";
             getline(cin, plaintext);
@@ -30,7 +30,7 @@ int main() {
             string ciphertext = encrypt(plaintext);
             cout << "Encrypted ciphertext: " << ciphertext << endl;
         } else if (choice == 2) {
-            // Decryption mode
+            //decryption mode
             string ciphertext;
             cout << "Enter the ciphertext to decrypt: ";
             getline(cin, ciphertext);
@@ -38,11 +38,11 @@ int main() {
             string plaintext = decrypt(ciphertext);
             cout << "Decrypted plaintext: " << plaintext << endl;
         } else if (choice == 0) {
-            // Exit the program
+            //exit the program
             cout << "Exiting the program." << endl;
             break;
         } else {
-            // Handle invalid input
+            // invalid input
             cout << "Invalid choice. Please try again." << endl;
         }
     }

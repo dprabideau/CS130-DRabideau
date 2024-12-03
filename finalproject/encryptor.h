@@ -10,13 +10,13 @@
 
 using namespace std;
 
-// Function to generate random alphabetic characters
+//function to generate random alphabetic characters
 char randomAlphabet();
 
-// Function to encrypt the given plaintext using the zigzag pattern
+//function to encrypt the plaintext using zigzag pattern
 string encrypt(string plaintext);
 
-// Function to decrypt the ciphertext back to plaintext
+//function to decrypt the ciphertext back to plaintext
 string decrypt(string ciphertext);
 
-#endif // ENCRYPTOR_H
+#endif
