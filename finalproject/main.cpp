@@ -5,6 +5,7 @@ Description:
     Original Idea: 
         Using a Lissajou curve as an encryption method. Plaintext would be 
         placed in a grid and then converted to ciphertext by following the Lissajous curve.
+        https://www.desmos.com/calculator/opwzdxpgnl 
     Outcome: 
         Instead of a mapping to a Lissajous curve, the text is read left-to-right or 
         right-to-left for each row in a zig-zag pattern. this mimics a Lissajous curve with a 
