@@ -8,7 +8,7 @@ Description:
     Outcome: 
         Instead of a mapping to a Lissajous curve, the text is read left-to-right or 
         right-to-left for each row in a zig-zag pattern to mimic a Lissajous curve with a 
-        ratio 1:n where n is an integer.
+        ratio 1:n where n is an odd integer.
 */
 
 #include "encryptor.h"
