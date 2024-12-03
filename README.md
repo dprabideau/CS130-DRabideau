@@ -154,3 +154,16 @@
 | Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/Labs/Lab6 |
 | Self Grade | 100/100 |
 | Notes | Dont remeber it very well I did it last week |
+
+
+### Final Project
+
+| Name | Value |
+| :--- | :--- |
+| Name | Lissajous Curve Inspired Encryption |
+| Description | Original Idea: Using a Lissajou curve as an encryption method. Plaintext would be placed in a grid and then converted to ciphertext by following the Lissajous curve. Outcome: Instead of a mapping to a Lissajous curve, the text is read left-to-right or right-to-left for each row in a zig-zag pattern. this mimics a Lissajous curve with a ratio 1:n where n is an odd integer. |
+| Due Date | Dec 13th 2024 |
+| Status | complete |
+| Location | https://github.com/dprabideau/CS130-DRabideau/tree/main/finalproject |
+| Self Grade | 100/100 |
+| Notes | I little disapointed that I couldnt implement my idea how I wanted to, but happy that I still was able to make an encryption based project |
