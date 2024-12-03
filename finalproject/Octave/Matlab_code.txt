@@ -1,0 +1,34 @@
+%Lissajous Curves are a Mathmetical Concept Linking to Music
+%For best looking curves use values of Fx and Fy that creat simple integer ratios
+%Encryption using Lissajous Curve
+
+t = 0:0.0001:1;    % time variable to cover a range
+A = 6;             %Amplitude
+Fx = 7;            % Frequency in x-direction
+Fy = 3;            % Frequency in y-direction
+phi = 0;           % 1st Phase difference
+%text_in = input('enter a string', 's');
+%length(text_in)
+
+
+
+x = A*sin(2 * pi * Fx * t);          % x-coordinates
+y = A*sin(2 * pi * Fy * t + phi);    % y-coordinates
+
+graph = plot(x, y);
+set(graph, "LineWidth", 2);
+xlabel('x');
+ylabel('y');
+
+title('Lissajous Curve');
+axis equal;                        % Ensures equal scaling for x and y
+xlim([-A A]); % Set limits of x-axis to fit the curve range
+ylim([-A A]); % Set limits of y-axis to fit the curve range
+xticks(linspace(-A, A, A*2+1)); % 20 intervals along the x-axis (-1 to 1)
+yticks(linspace(-A, A, A*2+1)); % 20 intervals along the y-axis (-1 to 1)
+grid on; % Turn on the grid
+
+% Plot integer points to show coverage
+hold on;
+plot(round(x), round(y), 'ro'); % Plot the integer points in red
+hold off;

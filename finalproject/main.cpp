@@ -7,7 +7,7 @@ Description:
         placed in a grid and then converted to ciphertext by following the Lissajous curve.
     Outcome: 
         Instead of a mapping to a Lissajous curve, the text is read left-to-right or 
-        right-to-left for each row in a zig-zag pattern to mimic a Lissajous curve with a 
+        right-to-left for each row in a zig-zag pattern. this mimics a Lissajous curve with a 
         ratio 1:n where n is an odd integer.
 */
 
